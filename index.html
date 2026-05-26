@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <title>Space Radio</title>
     <script>
-        // Список прямых ссылок на твои треки на GitHub Pages
+        // Массив твоих треков с правильным путём
         const playlist = [
-            "https://mrallay2304.github.io/radio-/rock_track1.mp3",
-            "https://mrallay2304.github.io/radio-/rock_track2.mp3",
-            "https://mrallay2304.github.io/radio-/rock_track3.mp3",
-            "https://mrallay2304.github.io/radio-/rock_track4.mp3",
-            "https://mrallay2304.github.io/radio-/rock_track5.mp3",
-            "https://mrallay2304.github.io/radio-/rock_track6.mp3"
+            "https://github.io",
+            "https://github.io",
+            "https://github.io",
+            "https://github.io",
+            "https://github.io",
+            "https://github.io"
         ];
         
-        // Выбираем случайный трек из списка
+        // Выбираем случайный трек
         const randomTrack = playlist[Math.floor(Math.random() * playlist.length)];
         
-        // Мгновенно перенаправляем плеер игры на этот файл
-        window.location.replace(randomTrack);
+        // Жесткий редирект, который подменяет адрес на чистый .mp3 файл
+        window.location.href = randomTrack;
     </script>
 </head>
-<body></body>
+<body>
+    <!-- Заглушка на случай, если игра не поймет JS редирект -->
+    <p>Loading space rock...</p>
+</body>
 </html>
