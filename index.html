@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // Список прямых ссылок на твои треки на GitHub Pages
+        const playlist = [
+            "https://mrallay2304.github.io/radio-/rock_track1.mp3",
+            "https://mrallay2304.github.io/radio-/rock_track2.mp3",
+            "https://mrallay2304.github.io/radio-/rock_track3.mp3"
+            "https://mrallay2304.github.io/radio-/rock_track4.mp3"
+            "https://mrallay2304.github.io/radio-/rock_track5.mp3"
+            "https://mrallay2304.github.io/radio-/rock_track6.mp3"
+        ];
+        
+        // Выбираем случайный трек из списка
+        const randomTrack = playlist[Math.floor(Math.random() * playlist.length)];
+        
+        // Мгновенно перенаправляем плеер игры на этот файл
+        window.location.replace(randomTrack);
+    </script>
+</head>
+<body></body>
+</html>
